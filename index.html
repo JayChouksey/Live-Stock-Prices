@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Stock Prices</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-chart-line"></i> Live Stock Prices</h1>
+            <p>Track live stock market data with style!</p>
+        </header>
+        <main>
+            <div class="input-container">
+                <input type="text" id="stock-symbol" placeholder="Enter Stock Symbol (e.g., TCS, INFY)">
+                <button id="fetch-button"><i class="fas fa-search"></i> Fetch Price</button>
+            </div>
+            <div id="stock-info">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Symbol</th>
+                            <th>Exchange</th>
+                            <th>Price</th>
+                            <th>Change</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody id="stock-data">
+                        <tr>
+                            <td colspan="5">Enter a stock symbol to view data</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <footer>
+            <p>Powered by <strong>Finance APIs</strong></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
